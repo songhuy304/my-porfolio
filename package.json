@@ -36,6 +36,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.96",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

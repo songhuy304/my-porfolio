@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./header";
 import { HeroBackground } from "./hero-background";
+import MaskHeader from "./mask-header";
 
 export const LayoutWithHeader = ({
   children,
@@ -10,6 +11,7 @@ export const LayoutWithHeader = ({
   return (
     <div className="font-[family-name:var(--font-exo2)] font-medium w-screen">
       <HeroBackground>
+        <MaskHeader />
         <Header />
 
         <main className="overflow-auto overflow-x-hidden container mx-auto flex-1 p-4">

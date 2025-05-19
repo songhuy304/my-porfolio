@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Learn more about Huy Dev - Frontend Developer, JavaScript enthusiast, and tech explorer.",
   keywords: [
     "Huy Dev",
-    "About Kinh",
+    "About ",
     "Frontend Developer",
     "JavaScript",
     "Next.js",

@@ -4,11 +4,11 @@ import {
   type AnimationVariant,
   TextAnimate,
 } from "@/components/magicui/text-animate";
-import { Compare } from "@/components/ui/compare";
 import { Cover } from "@/components/ui/cover";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { memo, useEffect, useState } from "react";
+import MySplineComponent from "./MySplineComponent";
 
 const texts = [
   "Front-End Developer",
@@ -21,7 +21,6 @@ const texts = [
   "Animation Developer",
   "Motion Developer",
   "Smooth Transition",
-  "WebGL Developer",
 ];
 
 const animationTypes: AnimationVariant[] = [
@@ -59,7 +58,7 @@ export const MyUniverse = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-20 px-2 md:px-6">
+    <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-10 px-2 md:px-6">
       <div className="flex-1 relative w-full lg:w-auto">
         <div className="text-xs bg-zinc-100 dark:bg-gray-800/50 w-max rounded-full border flex items-center gap-2 px-3 py-1.5">
           <div className="size-2 rounded-full bg-indigo-700 font-medium animate-pulse" />
@@ -75,7 +74,7 @@ export const MyUniverse = () => {
 
         {/* Responsive positioning for floating elements */}
         <div className="px-3 py-2 hidden sm:block absolute top-8 left-16 sm:left-32 bg-purple-500/20 rounded-[6px] w-max font-medium dark:text-purple-300 text-purple-500 border border-purple-500/20 animate-wiggle duration-1000">
-          UI Magic
+          Framer Motion
         </div>
 
         <div className="px-3 py-2 hidden sm:block absolute top-24 right-4 sm:right-10 bg-blue-500/20 rounded-[6px] w-max font-medium dark:text-blue-300 text-blue-500 border border-blue-500/20 animate-wiggle duration-1000">
@@ -117,27 +116,15 @@ export const MyUniverse = () => {
           </span>
         </div>
       </div>
-      <div className="flex-1 flex justify-center lg:justify-end w-full mt-8 lg:mt-0">
-        <CompareDemo />
+      <div className="flex-1 h-[500px] relative">
+        <MySplineComponent />
+
+        <div className="absolute right-0 bottom-0 px-4 py-2  -translate-y-5 h-10 w-44"></div>
       </div>
+      <div className="h-0 w-[40rem] absolute top-[10%] right-[-5%] shadow-[0_0_900px_20px_#272476] -rotate-[30deg] z-[-10]"></div>
     </div>
   );
 };
-
-export function CompareDemo() {
-  return (
-    <div className="w-full border rounded-3xl dark:bg-neutral-900 bg-neutral-100 border-neutral-200 dark:border-neutral-800">
-      <Compare
-        firstImage="https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/image%20%283%29-9ohWXR6mPsqfP9GC3OXB6l23pKXqpS.png"
-        secondImage="https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/image%20%284%29-Z38KH4uoJOoyhY6YDXVDNxRu8uWZUS.png"
-        firstImageClassName="object-cover object-left-top"
-        secondImageClassname="object-cover object-left-top"
-        className="h-[200px] sm:h-[250px] md:h-[400px] lg:h-[500px] w-full"
-        slideMode="hover"
-      />
-    </div>
-  );
-}
 
 export const Title = memo(() => {
   return (

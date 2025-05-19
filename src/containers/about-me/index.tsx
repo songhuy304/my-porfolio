@@ -21,28 +21,6 @@ export function MyInformation() {
     <>
       <div className="flex flex-col gap-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-          {/* <Card className="col-span-1 md:col-span-1 lg:col-span-2 dark:bg-black/50 bg-white/50 p-0 order-2 md:order-1">
-            <CardContent className="!p-0 h-full">
-              <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
-                <Image
-                  src="/images/Subject4.png"
-                  alt="avatar"
-                  width={1000}
-                  height={1000}
-                  className="z-10 object-contain md:translate-y-32 hidden dark:block"
-                />
-
-                <Image
-                  src="/images/Subject5.png"
-                  alt="avatar"
-                  width={1000}
-                  height={1000}
-                  className="z-10 object-contain md:translate-y-32 dark:hidden"
-                />
-                <Ripple className="" />
-              </div>
-            </CardContent>
-          </Card> */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2 dark:bg-black/50 bg-white/50 p-0 order-2 md:order-1">
             <MyResume />
           </div>
@@ -67,11 +45,9 @@ export function MyInformation() {
                     </div>
 
                     <div>
-                      <p className="text-lg sm:text-xl relative z-20 mt-2 font-medium">
-                        Bach Duong Kinh
-                      </p>
+                      <p className="text-lg sm:text-xl relative z-20 mt-2 font-medium"></p>
                       <p className="relative z-20 text-sm sm:text-base text-neutral-500 font-medium uppercase">
-                        Digital Fortress Co., Ltd.
+                        SparkMinds J.S.C
                       </p>
                       <p className="relative z-20 text-sm sm:text-base text-neutral-500 font-medium uppercase">
                         Frontend Developer
@@ -86,9 +62,11 @@ export function MyInformation() {
                     Passionate about technology and frontend craftsmanship.
                   </h3>
                   <h2 className="text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
-                    I thrive on learning, leading, and solving complex
-                    challenges — always reflecting on how each experience
-                    contributes to personal and team growth.
+                    As a passionate frontend developer, I’m driven by technology
+                    and the craft of building exceptional user experiences. I
+                    thrive on learning, leading, and solving complex challenges
+                    — always reflecting on how each experience helps me grow and
+                    contribute to my team’s success.
                   </h2>
                 </div>
 
@@ -299,12 +277,37 @@ const KeySkills = () => {
       darkColor: "rgba(99, 102, 241, 0.2)",
     },
     {
+      name: "Svelte",
+      color: "rgb(224 231 255)",
+      darkColor: "rgba(99, 102, 241, 0.2)",
+    },
+    {
       name: "TypeScript",
       color: "rgb(219 234 254)",
       darkColor: "rgba(59, 130, 246, 0.2)",
     },
     {
       name: "Tailwind CSS",
+      color: "rgb(207 250 254)",
+      darkColor: "rgba(6, 182, 212, 0.2)",
+    },
+    {
+      name: "Shadcn",
+      color: "rgb(207 250 254)",
+      darkColor: "rgba(6, 182, 212, 0.2)",
+    },
+    {
+      name: "Ant design",
+      color: "rgb(207 250 254)",
+      darkColor: "rgba(6, 182, 212, 0.2)",
+    },
+    {
+      name: "Hero UI",
+      color: "rgb(207 250 254)",
+      darkColor: "rgba(6, 182, 212, 0.2)",
+    },
+    {
+      name: "MUI",
       color: "rgb(207 250 254)",
       darkColor: "rgba(6, 182, 212, 0.2)",
     },

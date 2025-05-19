@@ -1,10 +1,10 @@
-"use client"
-import { BlurImage } from "@/components/ui/apple-cards-carousel"
-import { Lens } from "@/components/ui/lens"
-import { useState } from "react"
+"use client";
+import { BlurImage } from "@/components/ui/apple-cards-carousel";
+import { Lens } from "@/components/ui/lens";
+import { useState } from "react";
 
 export function MyResume() {
-  const [hovering, setHovering] = useState(false)
+  const [hovering, setHovering] = useState(false);
 
   return (
     <div>
@@ -13,7 +13,7 @@ export function MyResume() {
           <Beams />
           <Lens hovering={hovering} setHovering={setHovering}>
             <BlurImage
-              src="/images/avt-card.png"
+              src="/images/avt-card.jpg"
               alt="image"
               width={450}
               height={400}
@@ -37,7 +37,7 @@ export function MyResume() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 // Sorry about this but it looks cool
@@ -127,5 +127,5 @@ const Beams = () => {
         </filter>
       </defs>
     </svg>
-  )
-}
+  );
+};

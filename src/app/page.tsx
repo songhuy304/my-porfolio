@@ -1,13 +1,13 @@
-import { FullScreen } from "@/components/full-screen"
-import { MyInformation } from "@/containers/about-me"
+import { FullScreen } from "@/components/full-screen";
+import { MyInformation } from "@/containers/about-me";
 
-import { MyUniverse } from "@/containers/my-universe"
-import { PersonalInterests } from "@/containers/personal-interests"
+import { MyUniverse } from "@/containers/my-universe";
+import { PersonalInterests } from "@/containers/personal-interests";
 
 export default function Home() {
   return (
     <div>
-      <FullScreen className="w-full xl:w-[85%] mx-auto">
+      <FullScreen className="w-full xl:w-[90%] mx-auto">
         <MyUniverse />
       </FullScreen>
 
@@ -21,5 +21,5 @@ export default function Home() {
 
       {/* <Resume /> */}
     </div>
-  )
+  );
 }
